@@ -1,9 +1,15 @@
+// ./src/App.jsx
+
+import TodoApp from "./TodoApp";
+import Web5Provider from "./Web5Provider";
+
 const App = () => {
   return (
     <>
-      <h1>Web5 todo-list application</h1>
+      <Web5Provider>
+        <TodoApp />
+      </Web5Provider>
     </>
   );
 };
-
 export default App;
